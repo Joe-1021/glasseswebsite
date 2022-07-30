@@ -1,0 +1,493 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing:border-box;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+   
+}
+@media (max-width:768px){
+    .container{
+        max-width: 696px;
+    }
+}
+
+
+
+.header{
+    background: #AA0601;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center;
+}
+.logo a{
+    background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true);
+    width: 80px;
+    height: 50px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+    display: block;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color:white;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 32px;
+}
+.menu a:hover{
+    color:#AA0601;
+    background: white;
+}
+.mr--32{
+    margin-right: -32px;
+}
+
+.banner{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true);
+    padding-top: 296px;
+    padding-bottom: 296px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.buy{
+    font-size: 20px;
+    line-height: 30px;
+    padding: 6px 12px;
+    background: #AA0601;
+    color:white;
+}
+.buy:hover{
+    padding: 8px 16px;
+}
+h2{
+    font-size: 48px;
+    line-height: 72px;
+}
+@media (max-width:768px){
+    .banner{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+
+
+.pro-list{
+    padding: 80px 0;
+    background: #FBF2F2;
+}
+.pro-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pro-item{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 24px;
+}
+.pro-list img{  
+    margin-bottom: 24px;
+}
+h3{
+    font-size: 24px;
+    line-height: 36px;
+}
+@media (max-width:768px) {
+    .pro-item{
+        width:50%;
+    }
+}
+
+
+.glass-list{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.glass-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.glass-item{
+   width: 32%;
+}
+.glass-list img:hover{
+    opacity: 0.9;
+}
+@media (max-width:768px) {
+    .glass-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .glass-item{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .glass-item h2:nth-child(1),.glass-item h2:nth-child(2){
+        margin-bottom: 24px;
+    }
+
+}
+
+.design{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.design-card{
+    display: flex;
+}
+
+@media (max-width:768px) {
+    .design{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .design h2{
+        margin-bottom: 24px;
+    }
+    .design-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+.recommend{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.recommend img{
+    margin-bottom: 16px;
+}
+.recommend img:hover{
+    opacity: 0.9;
+}
+.customer-card{
+    width: 24%;
+    border: 1px solid #DEE2E6;
+    border-radius: 4px;
+    box-shadow: 0px 2px 6px #00000029;
+}
+.customer-card p{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+@media (max-width:768px) {
+    .customer-card{
+        width: 49%;
+    }
+    .card li{
+        margin-bottom: 16px;
+    }
+}
+
+.contact{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #FBF2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container{
+    width: 636px;
+}
+.btn-submit{
+    display: flex;
+    justify-content: center;
+}
+.btn-submit a{
+    background: #AA0601;
+    color: #FFFFFF;
+    padding: 16px 176px;
+    width: 416px; 
+}
+.btn-submit a:hover{
+    opacity: 0.8;
+}
+@media (max-width:768px) {
+    .contact h2{
+        margin-bottom: 24px;
+    }
+    .contact p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .contact-list{
+        display: flex;
+        flex-direction: column; 
+    }
+    .contact-container{
+        width: 576px;
+    }
+
+}
+
+.footer{
+    background: #AA0601;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    color:#FFFFFF
+}
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list a{
+    color:#FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    padding: 5px 24px;
+}
+.ml--24{
+    margin-left: -24px;
+}
+.menu-list a:hover{
+    background: #FFFFFF;
+    color: #AA0601;
+}
+.social a{
+    padding: 5px 16px;
+}
+.mr--16{
+    margin-right: -16px;
+}
+.social img{
+    width: 48px;
+    height: 48px;
+}
+.social img:hover{
+    opacity: 0.8;
+}
+.footer-contact{
+    border-bottom: 1px solid #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+.footer-contact a{
+    color:#FFFFFF;
+}
+.footer-contact a:hover{
+    color:#AA0601;
+    background: #FFFFFF;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+}
+.other-serve{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 21px;
+}
+.other-serve a{
+    color:#FFFFFF;
+    padding: 5px 24px;
+}
+.mr--24{
+    margin-right: -24px;
+}
+.other-serve a:hover{
+    color:#AA0601;
+    background: #FFFFFF;
+}
+@media (max-width:768px){
+    .social img{
+        width: 40px;
+        height: 40px;
+    }
+    .social a{
+        padding: 5px 8px;
+    }
+}
+
+
+
+
+
+
+
+
+.w-636{
+    width: 636px;
+}
+.w-306{
+    width: 306px;
+}
+.df{
+    display: flex;
+}
+.fd-c{
+    flex-direction: column
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-fe{
+    justify-content: flex-end; 
+}
+.ta-c{
+    text-align: center;
+}
+.ai-fe{
+    align-items: flex-end;
+}
+.ai-c{
+    align-items: center;
+}
+.fs-16{
+    font-size: 16px;
+    line-height: 24px;
+}
+.fs-20{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.fs-36{
+    font-size: 36px;
+    line-height: 54px;
+}
+.fs-64{
+    font-size: 64px;
+    line-height: 96px;
+}
+.ml-20{margin-left: 20px;}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-72{
+    margin-bottom: 72px;
+}
+.fw-b{
+    font-weight: bold;
+}
+.tc-650300{
+    color: #650300;
+}
+.tc-AA0601{
+    color: #AA0601;
+}
+.tc-FFFFFF{
+    color:#FFFFFF
+}
+.bc-FBF2F2{
+    background: #FBF2F2;
+}
+.bg-FFFFFF{
+    background:#FFFFFF;
+}
+.bg-AA0601{
+    background: #AA0601;
+}
+.tc-707070{
+    color: #707070;
+}

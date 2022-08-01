@@ -470,6 +470,9 @@ h3{
 
     margin-left: 20px;
 }
+.fs-36{
+    font-size: 36px;
+}
 .copyright{
     display: flex;
     justify-content: space-between;
@@ -479,7 +482,6 @@ h3{
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-
 }
 .other-serve a{
     color:#FFFFFF;
@@ -577,9 +579,7 @@ h3{
     font-size: 20px;
    
 }
-.fs-36{
-    font-size: 36px;
-}
+
 .fs-64{
     font-size: 64px;
 }

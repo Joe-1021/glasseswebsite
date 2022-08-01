@@ -67,16 +67,15 @@ img{
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
-   
 }
 @media (max-width:991px){
     .container{
         max-width: 720px;
     }
 }
-@media (max-width:375px){
+@media (max-width:768px){
     .container{
-        max-width: 348px;
+        max-width: 372px;
     }
 }
 
@@ -90,7 +89,7 @@ img{
     justify-content: space-between;
     align-items: center; 
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .nav-bar{
         flex-direction: column;
         align-items: center;
@@ -121,7 +120,7 @@ img{
     background: white;
 }
 
-@media (max-width:375px){
+@media (max-width:768px){
     .logo{
         margin-bottom: 12px;
     }
@@ -153,7 +152,7 @@ img{
     color:#650300;
 }
 .banner-subtitle{
-    font-size: 64px;  
+    font-size: 64px;
     color:#650300;
     font-weight: bold;
 }
@@ -177,12 +176,12 @@ h2{
         background-repeat: no-repeat;
     }
 }
-@media (max-width:375px){
+@media (max-width:768px){
     .banner-title{
-        font-size: 16px;
+        font-size: 16px;   
     }
     .banner-subtitle{
-        font-size: 24px;
+        font-size: 24px;    
     }
 }
 
@@ -221,7 +220,7 @@ h3{
         padding-right: 0px;
     }
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .pro-list-title{
         font-size: 24px;
     }
@@ -242,7 +241,7 @@ h3{
     justify-content: space-between;
 }
 .glass-item{
-   width: 32%;
+   width: 33%;
    padding-left: 12px;
    padding-right: 12px;
 }
@@ -265,16 +264,16 @@ h3{
     }
 
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .glass-list h2{
-        font-size: 24px;
+        font-size: 24px;   
         margin-bottom: 24px;
     }
     .glass-item{
         width: 100%;
     }
     .glass-item h2{
-        font-size: 48px;
+        font-size: 48px;   
     }
     
 }
@@ -305,12 +304,12 @@ h3{
         align-items: center;
     }
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .design h2{
-        font-size: 24px;
+        font-size: 24px;   
     }
     .design-item h2 {
-        font-size: 48px;
+        font-size: 48px;     
     }
 }
 
@@ -347,9 +346,9 @@ h3{
         margin-bottom: 16px;
     }
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .recommend h2{
-        font-size: 24px;
+        font-size: 24px;   
         margin-bottom: 24px;
     }
     .customer-card{
@@ -387,7 +386,7 @@ h3{
         margin-bottom: 24px;
     }
     .contact p{
-        font-size: 16px;
+        font-size: 16px;    
     }
     .contact-list{
         display: flex;
@@ -397,9 +396,9 @@ h3{
         width: 576px;
     }
 }
-@media (max-width:375px) {
+@media (max-width:768px) {
     .contact h2{
-        font-size: 24px;
+        font-size: 24px;      
     }
     .btn-submit a{
         width: 348px;
@@ -463,10 +462,12 @@ h3{
 
 .tel{
     font-size: 36px;
+    
     margin-left: 20px;
 }
 .mail{
     font-size: 36px;
+
     margin-left: 20px;
 }
 .copyright{
@@ -478,6 +479,7 @@ h3{
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+
 }
 .other-serve a{
     color:#FFFFFF;
@@ -499,7 +501,7 @@ h3{
         padding: 5px 8px;
     }
 }
-@media (max-width:375px){
+@media (max-width:768px){
     .menu-contact{
        margin-top: -24px;
     }
@@ -569,9 +571,11 @@ h3{
 }
 .fs-16{
     font-size: 16px;
+    
 }
 .fs-20{
     font-size: 20px;
+   
 }
 .fs-36{
     font-size: 36px;

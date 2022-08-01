@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
     font-family: 'Noto Sans TC', sans-serif;
     font-family: 'Roboto', sans-serif;
 }
@@ -63,20 +63,20 @@ img{
 }
 
 .container{
-    max-width: 1296px;
+    max-width: 1320px;
     margin: 0 auto;
     padding-left: 12px;
     padding-right: 12px;
    
 }
-@media (max-width:768px){
+@media (max-width:991px){
     .container{
         max-width: 720px;
     }
 }
 @media (max-width:375px){
     .container{
-        max-width: 375px;
+        max-width: 348px;
     }
 }
 
@@ -113,7 +113,6 @@ img{
     color:white;
     display: block;
     font-size: 20px;
-    line-height: 30px;
     padding: 10px 32px ;
     text-align: center;
 }
@@ -151,18 +150,15 @@ img{
 }
 .banner-title{
     font-size: 36px;
-    line-height: 1.5;
     color:#650300;
 }
 .banner-subtitle{
-    font-size: 64px;
-    line-height: 1.5;
+    font-size: 64px;  
     color:#650300;
     font-weight: bold;
 }
 .buy{
     font-size: 20px;
-    line-height: 30px;
     padding: 6px 12px;
     background: #AA0601;
     color:white;
@@ -172,9 +168,8 @@ img{
 }
 h2{
     font-size: 48px;
-    line-height: 72px;
 }
-@media (max-width:768px){
+@media (max-width:991px){
     .banner{
         background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
         background-size: cover;
@@ -185,11 +180,9 @@ h2{
 @media (max-width:375px){
     .banner-title{
         font-size: 16px;
-        line-height: 1.5;
     }
     .banner-subtitle{
         font-size: 24px;
-        line-height: 1.5;
     }
 }
 
@@ -221,9 +214,8 @@ h2{
 }
 h3{
     font-size: 24px;
-    line-height: 36px;
 }
-@media (max-width:768px) {
+@media (max-width:991px) {
     .pro-item{
         width:50%;
         padding-right: 0px;
@@ -232,29 +224,32 @@ h3{
 @media (max-width:375px) {
     .pro-list-title{
         font-size: 24px;
-        line-height: 1.5;
     }
     .pro-item{
         width: 100%;
     }
 }
 
-.glass-list{
+.classic{
     padding-top: 80px;
     padding-bottom: 80px;
 }
 .glass-card{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
     justify-content: space-between;
 }
 .glass-item{
    width: 32%;
+   padding-left: 12px;
+   padding-right: 12px;
 }
 .glass-list img:hover{
     opacity: 0.9;
 }
-@media (max-width:768px) {
+@media (max-width:991px) {
     .glass-card{
         display: flex;
         flex-direction: column;
@@ -273,7 +268,6 @@ h3{
 @media (max-width:375px) {
     .glass-list h2{
         font-size: 24px;
-        line-height: 1.5;
         margin-bottom: 24px;
     }
     .glass-item{
@@ -281,7 +275,6 @@ h3{
     }
     .glass-item h2{
         font-size: 48px;
-        line-height: 1.5;
     }
     
 }
@@ -298,7 +291,7 @@ h3{
     display: flex;
 }
 
-@media (max-width:768px) {
+@media (max-width:991px) {
     .design{
         padding-top: 40px;
         padding-bottom: 40px;
@@ -315,11 +308,9 @@ h3{
 @media (max-width:375px) {
     .design h2{
         font-size: 24px;
-        line-height: 1.5;
     }
     .design-item h2 {
         font-size: 48px;
-        line-height: 1.5;
     }
 }
 
@@ -348,7 +339,7 @@ h3{
     padding-left: 16px;
     padding-right: 16px;
 }
-@media (max-width:768px) {
+@media (max-width:991px) {
     .customer-card{
         width: 49%;
     }
@@ -359,7 +350,6 @@ h3{
 @media (max-width:375px) {
     .recommend h2{
         font-size: 24px;
-        line-height: 1.5;
         margin-bottom: 24px;
     }
     .customer-card{
@@ -392,13 +382,12 @@ h3{
 .btn-submit a:hover{
     opacity: 0.8;
 }
-@media (max-width:768px) {
+@media (max-width:991px) {
     .contact h2{
         margin-bottom: 24px;
     }
     .contact p{
         font-size: 16px;
-        line-height: 1.5;
     }
     .contact-list{
         display: flex;
@@ -411,7 +400,6 @@ h3{
 @media (max-width:375px) {
     .contact h2{
         font-size: 24px;
-        line-height: 1.5;
     }
     .btn-submit a{
         width: 348px;
@@ -433,7 +421,6 @@ h3{
 .menu-list a{
     color:#FFFFFF;
     font-size: 16px;
-    line-height: 24px;
     display: block;
     padding: 5px 24px;
 }
@@ -476,12 +463,10 @@ h3{
 
 .tel{
     font-size: 36px;
-    line-height: 1.5;
     margin-left: 20px;
 }
 .mail{
     font-size: 36px;
-    line-height: 1.5;
     margin-left: 20px;
 }
 .copyright{
@@ -493,7 +478,6 @@ h3{
     display: flex;
     justify-content: space-between;
     font-size: 14px;
-    line-height: 21px;
 }
 .other-serve a{
     color:#FFFFFF;
@@ -506,7 +490,7 @@ h3{
     color:#AA0601;
     background: #FFFFFF;
 }
-@media (max-width:768px){
+@media (max-width:991px){
     .social img{
         width: 40px;
         height: 40px;
@@ -544,7 +528,6 @@ h3{
     }
     .other-serve a{
         font-size: 16px;
-        line-height: 1.5;
         padding: 0px 0px;
     }
     
@@ -586,19 +569,15 @@ h3{
 }
 .fs-16{
     font-size: 16px;
-    line-height: 24px;
 }
 .fs-20{
     font-size: 20px;
-    line-height: 1.5;
 }
 .fs-36{
     font-size: 36px;
-    line-height: 54px;
 }
 .fs-64{
     font-size: 64px;
-    line-height: 96px;
 }
 .ml-20{margin-left: 20px;}
 .mb-8{
